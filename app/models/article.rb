@@ -14,6 +14,15 @@ class Article
         @@all
     end
 
+    #object relationship methods
+    def author 
+        @author
+    end
+
+    def magazine 
+        @magazine
+    end
+
 
 
 end
