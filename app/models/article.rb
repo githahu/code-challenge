@@ -23,6 +23,16 @@ class Article
         @magazine
     end
 
+    def title 
+        @title
+    end
 
+    def author_name 
+        self.author.name
+    end
+
+    def magazine_name
+        self.magazine.name 
+    end
 
 end

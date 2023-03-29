@@ -13,7 +13,14 @@ class Author
   # to return a unique array of mag instances for which an author has contributed to
 
   def magazines
-    articles.collect { |articles| article.magazine }.uniq
+    articles.collect { |article| article.magazine }.uniq
+  end
+
+  def add_article(magazine, title)
+    Article.new(self , magazine , title)
+  end
+  def topic_areas
+    magazines.collect { |magazine| magazine.category }.uniq
   end
 
 end
